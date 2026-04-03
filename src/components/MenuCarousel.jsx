@@ -1,0 +1,100 @@
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const menuItems = [
+  {
+    name: "Saucy Fries",
+    description: "Freshly made fries loaded with your favourite sauce. Full flavor.",
+    price: "£4.99",
+    image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=600&q=80",
+  },
+  {
+    name: "Wings (x6)",
+    description: "Crispy chicken wings. Level up with your favourite flavors and choose your dip.",
+    price: "£8.99",
+    image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600&q=80",
+  },
+  {
+    name: "Flavor Rules Menu",
+    description: "Boneless Wings (x8) + Tenders (x3) + Fries + Dip. The full experience.",
+    price: "£18.99",
+    image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600&q=80",
+  },
+  {
+    name: "Tenders (x4)",
+    description: "Crispy chicken breast strips. Pair with your favourite flavors.",
+    price: "£9.99",
+    image: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80",
+  },
+  {
+    name: "Boneless Wings (x8)",
+    description: "All the flavor, no bones. Tossed in your choice of sauce.",
+    price: "£10.99",
+    image: "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&q=80",
+  },
+];
+
+export default function MenuCarousel() {
+  const [current, setCurrent] = useState(0);
+  const visible = 3;
+  const max = menuItems.length - visible;
+
+  const prev = () => setCurrent((c) => Math.max(0, c - 1));
+  const next = () => setCurrent((c) => Math.min(max, c + 1));
+
+  return (
+    <section id="menu" className="bg-white py-16 px-4 md:px-12">
+      <div className="relative">
+        {/* Navigation arrows */}
+        <button
+          onClick={prev}
+          disabled={current === 0}
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 disabled:opacity-30 hover:bg-gray-800 transition-colors"
+        >
+          <ChevronLeft size={20} />
+        </button>
+        <button
+          onClick={next}
+          disabled={current >= max}
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 disabled:opacity-30 hover:bg-gray-800 transition-colors"
+        >
+          <ChevronRight size={20} />
+        </button>
+
+        {/* Cards */}
+        <div className="overflow-hidden mx-10">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${current * (100 / visible)}%)` }}
+          >
+            {menuItems.map((item, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 px-4"
+                style={{ width: `${100 / visible}%` }}
+              >
+                <div className="text-center">
+                  <div className="aspect-square overflow-hidden mb-4 bg-gray-100">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
+                  <h3 className="font-black text-black text-xl uppercase tracking-tight mb-2">
+                    {item.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-1">{item.description}</p>
+                  <p className="font-black text-black text-lg mb-4">{item.price}</p>
+                  <button className="w-full border-2 border-black bg-black text-white font-black text-sm uppercase tracking-widest py-3 hover:bg-white hover:text-black transition-colors">
+                    Add to Order
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
