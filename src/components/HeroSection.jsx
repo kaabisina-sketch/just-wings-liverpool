@@ -26,7 +26,7 @@ export default function HeroSection() {
             className="w-full h-full object-cover opacity-90"
           />
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
-            <p className="text-gray-400 text-sm font-bold uppercase tracking-widest mb-2">
+            <p className="text-white text-sm font-bold uppercase tracking-widest mb-2">
               12 Iconic Flavors. Got The Flavor.
             </p>
             <h1
