@@ -78,7 +78,7 @@ export default function MenuCarousel() {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                      className="w-full h-full object-cover hover:scale-105 transition-all duration-500"
                     />
                   </div>
                   <h3 className="font-black text-black text-xl uppercase tracking-tight mb-2">
