@@ -20,7 +20,7 @@ export default function PhotoGrid() {
             <img
               src={src}
               alt={`Just Wings photo ${i + 1}`}
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+              className={`w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ${i % 2 === 0 ? "" : "grayscale brightness-50"}`}
             />
           </div>
         ))}
