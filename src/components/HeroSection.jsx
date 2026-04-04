@@ -8,9 +8,9 @@ export default function HeroSection() {
           <img
             src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=900&q=80"
             alt="Wings spread"
-            className="w-full h-full object-cover grayscale brightness-75"
+            className="w-full h-full object-cover grayscale brightness-90"
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/10" />
           <div className="absolute bottom-6 left-6">
             <span className="border-2 border-white text-white text-xs font-black tracking-widest uppercase px-3 py-1">
               Liverpool's Finest
@@ -19,11 +19,11 @@ export default function HeroSection() {
         </div>
 
         {/* Right - lifestyle photo + tagline */}
-        <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[70vh] overflow-hidden bg-black">
+        <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[70vh] overflow-hidden bg-gray-100">
           <img
             src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80"
             alt="Lifestyle"
-            className="w-full h-full object-cover grayscale opacity-50"
+            className="w-full h-full object-cover grayscale opacity-70"
           />
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
             <p className="text-gray-400 text-sm font-bold uppercase tracking-widest mb-2">

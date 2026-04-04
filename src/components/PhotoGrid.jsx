@@ -13,7 +13,7 @@ const photos = [
 
 export default function PhotoGrid() {
   return (
-    <section className="bg-black">
+    <section className="bg-white">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-0">
         {photos.map((src, i) => (
           <div key={i} className="aspect-square overflow-hidden group">
