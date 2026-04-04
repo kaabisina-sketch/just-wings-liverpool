@@ -8,7 +8,7 @@ export default function HeroSection() {
           <img
             src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=900&q=80"
             alt="Wings spread"
-            className="w-full h-full object-cover grayscale brightness-90"
+            className="w-full h-full object-cover brightness-90"
           />
           <div className="absolute inset-0 bg-black/10" />
           <div className="absolute bottom-6 left-6">
@@ -23,7 +23,7 @@ export default function HeroSection() {
           <img
             src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80"
             alt="Lifestyle"
-            className="w-full h-full object-cover grayscale opacity-70"
+            className="w-full h-full object-cover opacity-90"
           />
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
             <p className="text-gray-400 text-sm font-bold uppercase tracking-widest mb-2">
