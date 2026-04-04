@@ -6,7 +6,7 @@ export default function WorkWithUs() {
         <img
           src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80"
           alt="Team"
-          className="w-full h-full object-cover grayscale brightness-75"
+          className="w-full h-full object-cover brightness-75"
         />
         <div className="absolute inset-0 bg-black/30" />
       </div>
@@ -16,7 +16,7 @@ export default function WorkWithUs() {
         <img
           src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=900&q=80"
           alt="Team working"
-          className="absolute inset-0 w-full h-full object-cover grayscale opacity-20"
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
         />
         <div className="relative z-10">
           <h2
