@@ -73,7 +73,7 @@ export default function MenuCarousel() {
                 className="flex-shrink-0 px-4"
                 style={{ width: `${100 / visible}%` }}
               >
-                <div className="text-center">
+                <div className="flex flex-col text-center h-full">
                   <div className="aspect-square overflow-hidden mb-4 bg-gray-100">
                     <img
                       src={item.image}
@@ -84,7 +84,7 @@ export default function MenuCarousel() {
                   <h3 className="font-black text-black text-xl uppercase tracking-tight mb-2">
                     {item.name}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-1">{item.description}</p>
+                  <p className="text-gray-600 text-sm mb-1 flex-1">{item.description}</p>
                   <p className="font-black text-black text-lg mb-4">{item.price}</p>
                   <a
                     href="https://just-wings-crosby.ordertiger.com/locations"
