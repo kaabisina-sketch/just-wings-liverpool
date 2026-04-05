@@ -86,9 +86,14 @@ export default function MenuCarousel() {
                   </h3>
                   <p className="text-gray-600 text-sm mb-1">{item.description}</p>
                   <p className="font-black text-black text-lg mb-4">{item.price}</p>
-                  <button className="w-full border-2 border-black bg-black text-white font-black text-sm uppercase tracking-widest py-3 hover:bg-white hover:text-black transition-colors">
-                    Add to Order
-                  </button>
+                  <a
+                    href="https://just-wings-crosby.ordertiger.com/locations"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full border-2 border-black bg-black text-white font-black text-sm uppercase tracking-widest py-3 hover:bg-white hover:text-black transition-colors text-center"
+                  >
+                    Order Now
+                  </a>
                 </div>
               </div>
             ))}

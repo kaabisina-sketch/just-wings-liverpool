@@ -36,7 +36,9 @@ export default function HeroSection() {
               WHAT FLAVOR<br />ARE YOU?
             </h1>
             <a
-              href="#menu"
+              href="https://just-wings-crosby.ordertiger.com/locations"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 inline-block bg-white text-black font-black text-sm uppercase tracking-widest px-8 py-3 hover:bg-gray-200 transition-colors w-fit"
             >
               Order Now

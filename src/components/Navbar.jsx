@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { MapPin, ShoppingBag, Menu, X } from "lucide-react";
 
+const ORDER_URL = "https://just-wings-crosby.ordertiger.com/locations";
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -18,10 +20,12 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-8">
-          {["Menu", "Flavors", "Locations", "Work With Us"].map((item) => (
+          {["Order Now", "Flavors", "Locations", "Work With Us"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase().replace(/ /g, "-")}`}
+              href={item === "Order Now" ? ORDER_URL : `#${item.toLowerCase().replace(/ /g, "-")}`}
+              target={item === "Order Now" ? "_blank" : undefined}
+              rel={item === "Order Now" ? "noopener noreferrer" : undefined}
               className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors"
             >
               {item}
@@ -39,7 +43,9 @@ export default function Navbar() {
             Find Us
           </a>
           <a
-            href="#menu"
+            href={ORDER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-black text-white font-bold text-xs px-4 py-2 uppercase tracking-wider hover:bg-gray-800 transition-colors"
           >
             <ShoppingBag size={14} />
@@ -56,10 +62,12 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-black px-6 py-4 flex flex-col gap-4">
-          {["Menu", "Flavors", "Locations", "Work With Us"].map((item) => (
+          {["Order Now", "Flavors", "Locations", "Work With Us"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase().replace(/ /g, "-")}`}
+              href={item === "Order Now" ? ORDER_URL : `#${item.toLowerCase().replace(/ /g, "-")}`}
+              target={item === "Order Now" ? "_blank" : undefined}
+              rel={item === "Order Now" ? "noopener noreferrer" : undefined}
               className="text-black font-bold text-sm tracking-widest uppercase"
               onClick={() => setMenuOpen(false)}
             >
@@ -69,7 +77,12 @@ export default function Navbar() {
           <a href="#find-us" className="bg-black text-white font-bold text-xs px-4 py-2 uppercase tracking-wider text-center">
             Find Us
           </a>
-          <a href="#menu" className="bg-black text-white font-bold text-xs px-4 py-2 uppercase tracking-wider text-center">
+          <a
+            href={ORDER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black text-white font-bold text-xs px-4 py-2 uppercase tracking-wider text-center"
+          >
             Order Now
           </a>
         </div>
