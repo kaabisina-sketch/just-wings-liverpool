@@ -14,6 +14,15 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t-2 border-black py-12 px-6">
       <div className="max-w-4xl mx-auto text-center">
+        {/* Logo */}
+        <div className="flex justify-center mb-8">
+          <img
+            src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/d5518e41e_justwingslogo.png"
+            alt="Just Wings"
+            className="h-16"
+          />
+        </div>
+
         {/* Main nav */}
         <div className="flex flex-wrap justify-center gap-8 mb-8">
           {mainLinks.map((link) => (
