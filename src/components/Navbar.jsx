@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MapPin, ShoppingBag, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ORDER_URL = "https://just-wings-crosby.ordertiger.com/locations";
 
@@ -20,17 +21,18 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-8">
-          {["Order Now", "Flavors", "Locations", "Work With Us"].map((item) => (
-            <a
-              key={item}
-              href={item === "Order Now" ? ORDER_URL : `#${item.toLowerCase().replace(/ /g, "-")}`}
-              target={item === "Order Now" ? "_blank" : undefined}
-              rel={item === "Order Now" ? "noopener noreferrer" : undefined}
-              className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors"
-            >
-              {item}
-            </a>
-          ))}
+          <a
+            href={ORDER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors"
+          >
+            Order Now
+          </a>
+          <Link to="/rewards" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Rewards</Link>
+          <Link to="/about" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">About Us</Link>
+          <Link to="/catering" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Catering</Link>
+          <a href="#find-us" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Locations</a>
         </div>
 
         {/* Right CTAs */}
@@ -62,18 +64,11 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-black px-6 py-4 flex flex-col gap-4">
-          {["Order Now", "Flavors", "Locations", "Work With Us"].map((item) => (
-            <a
-              key={item}
-              href={item === "Order Now" ? ORDER_URL : `#${item.toLowerCase().replace(/ /g, "-")}`}
-              target={item === "Order Now" ? "_blank" : undefined}
-              rel={item === "Order Now" ? "noopener noreferrer" : undefined}
-              className="text-black font-bold text-sm tracking-widest uppercase"
-              onClick={() => setMenuOpen(false)}
-            >
-              {item}
-            </a>
-          ))}
+          <a href={ORDER_URL} target="_blank" rel="noopener noreferrer" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Order Now</a>
+          <Link to="/rewards" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Rewards</Link>
+          <Link to="/about" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>About Us</Link>
+          <Link to="/catering" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Catering</Link>
+          <a href="#find-us" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Locations</a>
           <a href="#find-us" className="bg-black text-white font-bold text-xs px-4 py-2 uppercase tracking-wider text-center">
             Find Us
           </a>
