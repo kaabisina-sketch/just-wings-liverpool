@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { MapPin, ShoppingBag, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const ORDER_URL = "https://just-wings-crosby.ordertiger.com/locations";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +9,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-black">
       <div className="flex items-center justify-between px-6 py-3">
         {/* Logo */}
-        <a href="#">
+        <a href="/">
           <img
             src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/d5518e41e_justwingslogo.png"
             alt="Just Wings"
@@ -21,38 +19,10 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-8">
-          <a
-            href={ORDER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors"
-          >
-            Order Now
-          </a>
           <Link to="/rewards" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Rewards</Link>
           <Link to="/about" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">About Us</Link>
           <Link to="/catering" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Catering</Link>
           <a href="#find-us" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Locations</a>
-        </div>
-
-        {/* Right CTAs */}
-        <div className="hidden md:flex items-center gap-3">
-          <a
-            href="#find-us"
-            className="flex items-center gap-2 bg-black text-white font-bold text-xs px-4 py-2 uppercase tracking-wider hover:bg-gray-800 transition-colors"
-          >
-            <MapPin size={14} />
-            Find Us
-          </a>
-          <a
-            href={ORDER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-black text-white font-bold text-xs px-4 py-2 uppercase tracking-wider hover:bg-gray-800 transition-colors"
-          >
-            <ShoppingBag size={14} />
-            Order Now
-          </a>
         </div>
 
         {/* Mobile hamburger */}
@@ -64,22 +34,10 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-black px-6 py-4 flex flex-col gap-4">
-          <a href={ORDER_URL} target="_blank" rel="noopener noreferrer" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Order Now</a>
           <Link to="/rewards" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Rewards</Link>
           <Link to="/about" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>About Us</Link>
           <Link to="/catering" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Catering</Link>
           <a href="#find-us" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Locations</a>
-          <a href="#find-us" className="bg-black text-white font-bold text-xs px-4 py-2 uppercase tracking-wider text-center">
-            Find Us
-          </a>
-          <a
-            href={ORDER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-black text-white font-bold text-xs px-4 py-2 uppercase tracking-wider text-center"
-          >
-            Order Now
-          </a>
         </div>
       )}
     </nav>
