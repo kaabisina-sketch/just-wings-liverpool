@@ -19,6 +19,7 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-8">
+          <Link to="/" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Home</Link>
           <Link to="/rewards" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Rewards</Link>
           <Link to="/about" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">About Us</Link>
           <Link to="/catering" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Catering</Link>
@@ -34,6 +35,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-black px-6 py-4 flex flex-col gap-4">
+          <Link to="/" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/rewards" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Rewards</Link>
           <Link to="/about" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>About Us</Link>
           <Link to="/catering" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Catering</Link>
