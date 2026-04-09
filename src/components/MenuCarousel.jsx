@@ -7,7 +7,7 @@ const menuItems = [
     description: "4 crispy breaded hot wings, ideal addition to any meal.",
     price: "£5.95",
     image: "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/3e1005116_crispyhot.jpg",
-    imagePosition: "right center",
+    imagePosition: "right 30%",
     imageScale: "scale-125",
   },
   {
