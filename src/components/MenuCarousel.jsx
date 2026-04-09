@@ -85,7 +85,7 @@ export default function MenuCarousel() {
                     {item.name}
                   </h3>
                   <p className="text-gray-600 text-sm mb-1 flex-1">{item.description}</p>
-                  <p className="font-black text-black text-lg mb-4">{item.price}</p>
+
                   <a
                     href="https://just-wings-crosby.ordertiger.com/locations"
                     target="_blank"
