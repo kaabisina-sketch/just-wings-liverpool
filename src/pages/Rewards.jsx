@@ -40,7 +40,7 @@ export default function Rewards() {
         {/* Left – dark visual */}
         <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[85vh] overflow-hidden bg-black flex items-center justify-center">
           <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80"
+            src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/51dbf268f_justwings.jpg"
             alt="Just Wings food"
             className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
