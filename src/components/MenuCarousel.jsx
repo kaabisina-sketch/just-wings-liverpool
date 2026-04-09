@@ -7,8 +7,9 @@ const menuItems = [
     description: "4 crispy breaded hot wings, ideal addition to any meal.",
     price: "£5.95",
     image: "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/3e1005116_crispyhot.jpg",
-    imagePosition: "right 30%",
+    imagePosition: "right center",
     imageScale: "scale-125",
+    imageOffsetY: "-10px",
   },
   {
     name: "Popcorn Chicken",
@@ -81,7 +82,7 @@ export default function MenuCarousel() {
                       src={item.image}
                       alt={item.name}
                       className={`w-full h-full object-cover transition-all duration-500 ${item.imageScale || ''} hover:brightness-110`}
-                      style={{ objectPosition: item.imagePosition || 'center' }}
+                      style={{ objectPosition: item.imagePosition || 'center', transform: `${item.imageScale ? 'scale(1.25)' : ''} translateY(${item.imageOffsetY || '0px'})` }}
                     />
                   </div>
                   <h3 className="font-black text-black text-xl uppercase tracking-tight mb-2">
