@@ -3,12 +3,12 @@ const photos = [
   "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",
   "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600&q=80",
   "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80",
+  "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/5c51ca470_wings2.jpeg",
   "https://images.unsplash.com/photo-1598515213692-3d87dcfbe0c7?w=600&q=80",
   "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=600&q=80",
   "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&q=80",
   "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80",
   "https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=600&q=80",
-  "https://images.unsplash.com/photo-1606728035253-49e8a23146de?w=600&q=80",
 ];
 
 export default function PhotoGrid() {
