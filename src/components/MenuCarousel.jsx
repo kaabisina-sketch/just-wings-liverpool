@@ -3,34 +3,34 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const menuItems = [
   {
-    name: "Saucy Fries",
-    description: "Freshly made fries loaded with your favourite sauce. Full flavor.",
-    price: "£4.99",
-    image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=600&q=80",
+    name: "Crispy Hot Wings",
+    description: "4 crispy breaded hot wings, ideal addition to any meal.",
+    price: "£5.95",
+    image: "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/56e82698b_wingshero.jpg",
   },
   {
-    name: "Wings (x6)",
-    description: "Crispy chicken wings. Level up with your favourite flavors and choose your dip.",
-    price: "£8.99",
-    image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600&q=80",
-  },
-  {
-    name: "Flavor Rules Menu",
-    description: "Boneless Wings (x8) + Tenders (x3) + Fries + Dip. The full experience.",
-    price: "£18.99",
-    image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600&q=80",
-  },
-  {
-    name: "Tenders (x4)",
-    description: "Crispy chicken breast strips. Pair with your favourite flavors.",
-    price: "£9.99",
+    name: "Popcorn Chicken",
+    description: "15 pieces of popcorn chicken breast lightly breaded, ideal with our homemade ranch.",
+    price: "£5.95",
     image: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80",
   },
   {
-    name: "Boneless Wings (x8)",
-    description: "All the flavor, no bones. Tossed in your choice of sauce.",
+    name: "American Fries",
+    description: "Lightly seasoned with American Red Salt.",
+    price: "£3.50",
+    image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=600&q=80",
+  },
+  {
+    name: "6 Boneless Wings",
+    description: "100% breast meat, breaded & tossed in your favourite Just Wings sauce or seasoning.",
     price: "£10.99",
     image: "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/021ef4966_bonelesswings.jpeg",
+  },
+  {
+    name: "Chicken Wings (x6)",
+    description: "6 classic chicken wings tossed in your choice of our iconic flavors.",
+    price: "£8.99",
+    image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600&q=80",
   },
 ];
 
