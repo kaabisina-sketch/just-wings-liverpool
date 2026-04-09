@@ -30,7 +30,7 @@ const menuItems = [
     name: "Boneless Wings (x8)",
     description: "All the flavor, no bones. Tossed in your choice of sauce.",
     price: "£10.99",
-    image: "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&q=80",
+    image: "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/021ef4966_bonelesswings.jpeg",
   },
 ];
 
