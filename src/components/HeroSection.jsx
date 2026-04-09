@@ -21,7 +21,7 @@ export default function HeroSection() {
         {/* Right - lifestyle photo + tagline */}
         <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[70vh] overflow-hidden bg-gray-100">
           <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80"
+            src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/51dbf268f_justwings.jpg"
             alt="Lifestyle"
             className="w-full h-full object-cover opacity-90"
           />
