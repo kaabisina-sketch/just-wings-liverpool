@@ -5,7 +5,7 @@ const photos = [
   "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80",
   "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/5c51ca470_wings2.jpeg",
   "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/0f1cac159_justwings3.jpeg",
-  "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=600&q=80",
+  "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/8f9f77f3c_justwings7.jpeg",
   "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/c7ef7fcd1_justwings5.jpeg",
   "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/063784548_justwings6.jpeg",
   "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/e39ee6c61_justwings4.jpeg",
