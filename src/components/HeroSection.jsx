@@ -6,7 +6,7 @@ export default function HeroSection() {
         {/* Left - food photo */}
         <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[70vh] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=900&q=80"
+            src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/56e82698b_wingshero.jpg"
             alt="Wings spread"
             className="w-full h-full object-cover brightness-90"
           />
