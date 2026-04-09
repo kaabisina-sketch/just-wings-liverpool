@@ -14,9 +14,9 @@ export default function WorkWithUs() {
       {/* Right - content */}
       <div className="relative w-full md:w-1/2 bg-black flex flex-col justify-center p-10 md:p-16 border-l-2 border-white">
         <img
-          src="https://images.unsplash.com/photo-1581349437898-cebbe9831942?w=900&q=80"
-          alt="Team working"
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/d5518e41e_justwingslogo.png"
+          alt="Just Wings Logo"
+          className="absolute inset-0 w-full h-full object-contain opacity-10 p-16"
         />
         <div className="relative z-10">
           <h2
