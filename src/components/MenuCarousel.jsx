@@ -6,7 +6,9 @@ const menuItems = [
     name: "Crispy Hot Wings",
     description: "4 crispy breaded hot wings, ideal addition to any meal.",
     price: "£5.95",
-    image: "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/56e82698b_wingshero.jpg",
+    image: "https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/3e1005116_crispyhot.jpg",
+    imagePosition: "right center",
+    imageScale: "scale-125",
   },
   {
     name: "Popcorn Chicken",
@@ -78,7 +80,8 @@ export default function MenuCarousel() {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-all duration-500"
+                      className={`w-full h-full object-cover transition-all duration-500 ${item.imageScale || ''} hover:brightness-110`}
+                      style={{ objectPosition: item.imagePosition || 'center' }}
                     />
                   </div>
                   <h3 className="font-black text-black text-xl uppercase tracking-tight mb-2">
