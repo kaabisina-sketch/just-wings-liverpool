@@ -23,7 +23,7 @@ export default function Navbar() {
           <Link to="/rewards" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Rewards</Link>
           <Link to="/about" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">About Us</Link>
           <Link to="/catering" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Catering</Link>
-          <a href="#find-us" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Locations</a>
+          <Link to="/locations" className="text-black font-bold text-sm tracking-widest uppercase hover:text-gray-600 transition-colors">Locations</Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -39,7 +39,7 @@ export default function Navbar() {
           <Link to="/rewards" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Rewards</Link>
           <Link to="/about" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>About Us</Link>
           <Link to="/catering" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Catering</Link>
-          <a href="#find-us" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Locations</a>
+          <Link to="/locations" className="text-black font-bold text-sm tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Locations</Link>
         </div>
       )}
     </nav>

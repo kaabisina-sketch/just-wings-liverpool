@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Rewards from "./pages/Rewards";
 import AboutUs from "./pages/AboutUs";
 import Catering from "./pages/Catering";
+import Locations from "./pages/Locations";
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -41,6 +42,7 @@ const AuthenticatedApp = () => {
       <Route path="/rewards" element={<Rewards />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/catering" element={<Catering />} />
+      <Route path="/locations" element={<Locations />} />
       {/* Add your page Route elements here */}
       <Route path="*" element={<PageNotFound />} />
     </Routes>
