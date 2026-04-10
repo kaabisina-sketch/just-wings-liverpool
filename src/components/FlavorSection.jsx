@@ -1,8 +1,10 @@
 const flavors = [
-  { name: "Popcorn Chicken", heat: 2, desc: "Crispy little bites of pure joy. Lightly seasoned and dangerously moreish." },
-  { name: "Crispy Chicken Wings", heat: 4, desc: "Golden, crunchy, and seriously spicy. For those who like it hot." },
-  { name: "Potato Wedges", heat: 1, desc: "Thick-cut, seasoned to perfection. The ultimate side." },
-  { name: "Traditional Wings", heat: 2, desc: "Classic bone-in wings, tossed in your choice of sauce. Never gets old." },
+  { name: "Buffalo Classic", heat: 3, desc: "The original hot sauce. Tangy, buttery, and boldly spiced. A timeless crowd-pleaser." },
+  { name: "Honey Garlic", heat: 1, desc: "Sweet honey meets rich garlic in a sticky, finger-licking glaze you won't forget." },
+  { name: "Lemon Pepper", heat: 1, desc: "Zesty citrus and cracked black pepper — bright, fresh, and seriously addictive." },
+  { name: "BBQ Smokehouse", heat: 2, desc: "Deep, smoky, slow-cooked BBQ flavour with a rich molasses finish." },
+  { name: "Mango Habanero", heat: 5, desc: "Tropical sweetness slammed with habanero heat. Not for the faint-hearted." },
+  { name: "Garlic Parmesan", heat: 1, desc: "Creamy garlic butter tossed with aged parmesan. Rich, savoury, and totally irresistible." },
 ];
 
 export default function FlavorSection() {
@@ -14,10 +16,10 @@ export default function FlavorSection() {
             className="text-black font-black uppercase"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", letterSpacing: "-0.04em" }}
           >
-            New Items
+            Our Flavors
           </h2>
           <p className="text-gray-500 font-bold uppercase tracking-widest text-sm mt-2">
-            Fresh additions to the Just Wings lineup
+            12 iconic sauces. Find your perfect heat.
           </p>
         </div>
 
