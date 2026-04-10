@@ -46,7 +46,7 @@ export default function FindUs() {
             </button>
           </form>
           <p className="text-gray-300 text-xs mt-4 uppercase tracking-widest">
-            Liverpool City Centre · Baltic Triangle · Anfield
+            Crosby · Southport · St Helens · Leigh
           </p>
         </div>
       </div>
