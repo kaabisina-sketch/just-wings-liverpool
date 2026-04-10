@@ -50,6 +50,28 @@ export default function FindUs() {
           </p>
         </div>
       </div>
+      {/* Locations list */}
+      <div className="bg-white border-t-2 border-black">
+        <div className="max-w-6xl mx-auto divide-y divide-black/10">
+          {[
+            { area: "Leigh, Crosby, Liverpool, Southport", name: "Just Wings - Crosby", address: "14 Coronation Road, L23 5RE, Merseyside", status: "Open" },
+            { area: "", name: "Just Wings - Liverpool", address: "45 Bold Street, L1 4HF, Liverpool", status: "Open" },
+            { area: "", name: "Just Wings - Southport", address: "12 Lord Street, PR8 1NY, Merseyside", status: "Open" },
+            { area: "", name: "Just Wings - St Helens", address: "53 Ormskirk Street, WA10 2SY, Merseyside", status: "Open" },
+          ].map((loc, i) => (
+            <div key={i} className="flex flex-col md:flex-row md:items-center justify-between px-6 md:px-12 py-5 hover:bg-gray-50 transition-colors">
+              <div>
+                {loc.area && (
+                  <p className="text-xs font-black uppercase tracking-widest text-gray-400 mb-1">{loc.area}</p>
+                )}
+                <h3 className="font-black uppercase text-base tracking-tight">{loc.name}</h3>
+                <p className="text-gray-500 text-sm">{loc.address}</p>
+              </div>
+              <span className="mt-2 md:mt-0 text-green-600 font-black text-xs uppercase tracking-widest">{loc.status}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
