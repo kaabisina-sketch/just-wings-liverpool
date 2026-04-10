@@ -1,10 +1,12 @@
 const flavors = [
-  { name: "Buffalo Classic", heat: 3, desc: "The original hot sauce. Tangy, buttery, and boldly spiced. A timeless crowd-pleaser." },
-  { name: "Honey Garlic", heat: 1, desc: "Sweet honey meets rich garlic in a sticky, finger-licking glaze you won't forget." },
-  { name: "Lemon Pepper", heat: 1, desc: "Zesty citrus and cracked black pepper — bright, fresh, and seriously addictive." },
-  { name: "BBQ Smokehouse", heat: 2, desc: "Deep, smoky, slow-cooked BBQ flavour with a rich molasses finish." },
-  { name: "Mango Habanero", heat: 5, desc: "Tropical sweetness slammed with habanero heat. Not for the faint-hearted." },
-  { name: "Garlic Parmesan", heat: 1, desc: "Creamy garlic butter tossed with aged parmesan. Rich, savoury, and totally irresistible." },
+  { name: "Volcano", heat: 5, desc: "Pure fire. Our hottest sauce — scorching heat that hits hard and lingers long." },
+  { name: "Mango Habanero", heat: 4, desc: "Tropical sweetness collides with habanero heat. Fruity up front, fiery at the back." },
+  { name: "Sriracha Hot Honey", heat: 4, desc: "The perfect sweet heat combo — sticky sriracha meets golden hot honey." },
+  { name: "Cajun", heat: 3, desc: "Bold Southern spices, smoky and punchy with a satisfying kick." },
+  { name: "Original Buffalo", heat: 3, desc: "The classic. Tangy, buttery hot sauce that started it all." },
+  { name: "Chinese S&P", heat: 2, desc: "Fragrant Chinese seasoning with a light peppery warmth. Crispy and addictive." },
+  { name: "Sweet Chilli", heat: 2, desc: "A fan favourite — sweet, sticky, and mildly spiced. Great for all heat levels." },
+  { name: "Garlic Parm", heat: 1, desc: "Creamy garlic butter tossed with aged parmesan. Rich, savoury, zero heat." },
 ];
 
 export default function FlavorSection() {
