@@ -32,28 +32,13 @@ export default function AboutUs() {
       </section>
 
       {/* Mission */}
-      <section className="flex flex-col md:flex-row min-h-[60vh] border-t-2 border-black">
-        <div className="w-full md:w-1/2 bg-black flex flex-col justify-center px-10 md:px-16 py-16">
-          <h2
-            className="text-white font-black uppercase leading-none mb-6"
-            style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", letterSpacing: "-0.03em" }}
-          >
-            THE JUST WINGS<br />MISSION
-          </h2>
-          <p className="text-gray-300 text-base leading-relaxed mb-6">
-            We believe chicken wings should be an experience — not an afterthought. That's why every wing we make is tossed fresh, sauced bold, and served hot. No frozen shortcuts. No flavor compromises.
-          </p>
-          <p className="text-gray-400 text-sm leading-relaxed">
-            From our kitchen in Liverpool to your hands — we obsess over every detail so you don't have to think about anything except which flavor to hit next.
-          </p>
-        </div>
-        <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[60vh] overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80"
-            alt="Team"
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="border-t-2 border-black min-h-[60vh] overflow-hidden">
+        <img
+          src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/3e1005116_crispyhot.jpg"
+          alt="Just Wings"
+          className="w-full h-full object-cover"
+          style={{ maxHeight: "600px", width: "100%" }}
+        />
       </section>
 
       {/* Values */}
