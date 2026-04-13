@@ -1,14 +1,13 @@
-import { useState } from "react";
-import { MapPin, ArrowRight } from "lucide-react";
+import { MapPin } from "lucide-react";
+
+const locations = [
+  { name: "Crosby", url: "https://just-wings-crosby.ordertiger.com/menu/just-wings_crosby" },
+  { name: "Southport", url: "https://just-wings-crosby.ordertiger.com/menu/just-wings_southport" },
+  { name: "St Helens", url: "https://just-wings-crosby.ordertiger.com/menu/just-wings_st-helens" },
+  { name: "Leigh", url: "https://just-wings-crosby.ordertiger.com/menu/just-wings_leigh" },
+];
 
 export default function FindUs() {
-  const [postcode, setPostcode] = useState("");
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    alert(`Finding Just Wings near ${postcode}...`);
-  };
-
   return (
     <section id="find-us" className="relative">
       {/* Map background using OpenStreetMap embed for Liverpool */}
@@ -21,7 +20,7 @@ export default function FindUs() {
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center px-4">
-          <div className="flex items-center gap-2 mb-4">
+          <div className="flex items-center gap-2 mb-6">
             <MapPin className="text-white" size={24} />
             <h2
               className="text-white font-black uppercase text-center"
@@ -30,24 +29,19 @@ export default function FindUs() {
               FIND JUST WINGS
             </h2>
           </div>
-          <form onSubmit={handleSearch} className="flex w-full max-w-md">
-            <input
-              type="text"
-              value={postcode}
-              onChange={(e) => setPostcode(e.target.value)}
-              placeholder="Enter your postcode here"
-              className="flex-1 bg-white text-black font-bold text-sm px-5 py-4 outline-none placeholder-gray-400"
-            />
-            <button
-              type="submit"
-              className="bg-black text-white px-6 py-4 border-2 border-white hover:bg-white hover:text-black transition-colors"
-            >
-              <ArrowRight size={20} />
-            </button>
-          </form>
-          <p className="text-gray-300 text-xs mt-4 uppercase tracking-widest">
-            Crosby · Southport · St Helens · Leigh
-          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {locations.map((loc) => (
+              <a
+                key={loc.name}
+                href={loc.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-black font-black uppercase tracking-widest text-sm px-6 py-3 hover:bg-black hover:text-white border-2 border-white transition-colors"
+              >
+                {loc.name}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
       {/* Locations list */}
