@@ -1,7 +1,7 @@
 import { MapPin } from "lucide-react";
 
 const locations = [
-  { name: "Crosby", url: "https://just-wings-crosby.ordertiger.com/menu/just-wings_crosby" },
+  { name: "Crosby", url: "https://just-wings-crosby.ordertiger.com/" },
   { name: "Southport", url: "https://just-wings-crosby.ordertiger.com/menu/just-wings_southport" },
   { name: "St Helens", url: "https://just-wings-crosby.ordertiger.com/menu/just-wings_st-helens" },
   { name: "Leigh", url: "https://just-wings-crosby.ordertiger.com/menu/just-wings_leigh" },
