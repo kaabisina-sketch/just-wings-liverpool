@@ -67,7 +67,7 @@ export default function AboutUs() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-2 border-black">
             {[
-              { title: "Bold Flavor", desc: "12 iconic sauces. Every one earned its place." },
+              { title: "Bold Flavor", desc: "Iconic sauces. Every one earned its place." },
               { title: "Fresh Only", desc: "Made to order. Never frozen, never rushed." },
               { title: "Community", desc: "Liverpool-born. Liverpool-proud. Always." },
               { title: "Real Heat", desc: "From zero to inferno — we respect all heat levels." },
