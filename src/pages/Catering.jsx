@@ -15,7 +15,7 @@ export default function Catering() {
             <img
               src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=800&q=80"
               alt="Wings catering"
-              className="w-full h-full object-cover grayscale"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
             />
           </div>
 
@@ -53,7 +53,7 @@ export default function Catering() {
             <img
               src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&q=80"
               alt="Wings spread"
-              className="w-full h-full object-cover grayscale"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
             />
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function Catering() {
           <img
             src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=800&q=80"
             alt="Find a location"
-            className="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
             style={{ minHeight: "300px" }}
           />
           <div className="absolute inset-0 bg-black/60 flex items-end p-10">
@@ -146,7 +146,7 @@ export default function Catering() {
           <img
             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
             alt="Large event catering"
-            className="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
             style={{ minHeight: "300px" }}
           />
           <div className="absolute inset-0 bg-black/60 flex items-end p-10">
