@@ -9,9 +9,9 @@ export default function Catering() {
 
       {/* Hero — food photos flanking centered title */}
       <section className="pt-[60px] relative overflow-hidden bg-white">
-        <div className="grid grid-cols-3 md:grid-cols-5 min-h-[420px]">
+        <div className="grid grid-cols-5 md:grid-cols-7 min-h-[420px]">
           {/* Left food image */}
-          <div className="col-span-1 md:col-span-2 relative overflow-hidden">
+          <div className="col-span-2 md:col-span-3 relative overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=800&q=80"
               alt="Wings catering"
@@ -20,7 +20,7 @@ export default function Catering() {
           </div>
 
           {/* Center content */}
-          <div className="col-span-1 flex flex-col items-center justify-center bg-white px-4 py-12 text-center z-10">
+          <div className="col-span-1 flex flex-col items-center justify-center bg-white px-6 py-12 text-center z-10">
             <img
               src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/d5518e41e_justwingslogo.png"
               alt="Just Wings"
@@ -30,7 +30,7 @@ export default function Catering() {
               className="font-black uppercase leading-none mb-8 text-black"
               style={{ fontSize: "clamp(1.8rem, 3.5vw, 3.5rem)", letterSpacing: "-0.04em" }}
             >
-              JUST WINGS<br />CATERING
+              CATERING
             </h1>
             <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
               <a
@@ -49,7 +49,7 @@ export default function Catering() {
           </div>
 
           {/* Right food image */}
-          <div className="col-span-1 md:col-span-2 relative overflow-hidden">
+          <div className="col-span-2 md:col-span-3 relative overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&q=80"
               alt="Wings spread"
