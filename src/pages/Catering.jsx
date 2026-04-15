@@ -144,7 +144,7 @@ export default function Catering() {
         </div>
         <div className="relative overflow-hidden group">
           <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+            src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/a68bca97d_flavord10.jpg"
             alt="Large event catering"
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
             style={{ minHeight: "300px" }}
