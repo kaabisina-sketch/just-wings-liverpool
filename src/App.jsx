@@ -7,7 +7,6 @@ import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 // Add page imports here
 import Home from "./pages/Home";
-import Rewards from "./pages/Rewards";
 import AboutUs from "./pages/AboutUs";
 import Catering from "./pages/Catering";
 import Locations from "./pages/Locations";
@@ -39,7 +38,6 @@ const AuthenticatedApp = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/rewards" element={<Rewards />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/catering" element={<Catering />} />
       <Route path="/locations" element={<Locations />} />
