@@ -150,7 +150,6 @@ export default function Catering() {
                 <p className={`text-sm uppercase tracking-widest mb-4 ${pkg.featured ? "text-gray-400" : "text-gray-500"}`}>
                   {pkg.serves}
                 </p>
-                <p className="font-black text-3xl mb-6">{pkg.price}</p>
                 <ul className="flex-1 space-y-2 mb-8">
                   {pkg.includes.map((item, j) => (
                     <li key={j} className={`flex items-center gap-2 text-sm ${pkg.featured ? "text-gray-300" : "text-gray-600"}`}>
