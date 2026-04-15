@@ -34,7 +34,9 @@ export default function Catering() {
             </h1>
             <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
               <a
-                href="mailto:catering@justwings.co.uk"
+                href="https://just-wings-crosby.ordertiger.com/menu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-black text-white font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-gray-800 transition-colors text-center"
               >
                 Start a Catering Order
@@ -114,7 +116,9 @@ export default function Catering() {
             Start a Catering Order
           </h2>
           <a
-            href="mailto:catering@justwings.co.uk"
+            href="https://just-wings-crosby.ordertiger.com/menu"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex-shrink-0 bg-white text-black font-black uppercase tracking-widest text-sm px-10 py-4 hover:bg-gray-200 transition-colors"
           >
             Order Now
