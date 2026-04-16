@@ -55,7 +55,7 @@ export default function Locations() {
             className="flex flex-col md:flex-row border-2 border-black overflow-hidden hover:shadow-xl transition-shadow"
           >
             {/* Image */}
-            <div className="w-full md:w-72 h-56 md:h-auto flex-shrink-0 overflow-hidden">
+            <div className="w-full md:w-72 h-56 flex-shrink-0 overflow-hidden">
               <img
                 src={loc.image}
                 alt={loc.name}
