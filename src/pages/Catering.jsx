@@ -37,7 +37,7 @@ export default function Catering() {
                 href="https://just-wings-crosby.ordertiger.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-gray-800 transition-colors text-center"
+                className="bg-white text-black border-2 border-black font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-black hover:text-white transition-colors text-center"
               >
                 Start a Catering Order
               </a>
