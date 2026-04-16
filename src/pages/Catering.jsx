@@ -39,7 +39,7 @@ export default function Catering() {
                 rel="noopener noreferrer"
                 className="bg-white text-black border-2 border-black font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-black hover:text-white transition-colors text-center"
               >
-                Start a Catering Order
+                Place a Catering Order
               </a>
               <a
                 href="mailto:catering@justwings.co.uk"
@@ -106,14 +106,14 @@ export default function Catering() {
       </section>
 
 
-      {/* Start a Catering Order Banner */}
+      {/* Place a Catering Order Banner */}
       <section className="bg-white border-t-2 border-black py-10 px-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <h2
             className="text-black font-black uppercase leading-none"
             style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)", letterSpacing: "-0.04em" }}
           >
-            Start a Catering Order
+            Place a Catering Order
           </h2>
           <a
             href="https://just-wings-crosby.ordertiger.com"
