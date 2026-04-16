@@ -107,10 +107,10 @@ export default function Catering() {
 
 
       {/* Start a Catering Order Banner */}
-      <section className="bg-black border-t-2 border-white py-10 px-6">
+      <section className="bg-white border-t-2 border-black py-10 px-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <h2
-            className="text-white font-black uppercase leading-none"
+            className="text-black font-black uppercase leading-none"
             style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)", letterSpacing: "-0.04em" }}
           >
             Start a Catering Order
@@ -119,7 +119,7 @@ export default function Catering() {
             href="https://just-wings-crosby.ordertiger.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 bg-white text-black font-black uppercase tracking-widest text-sm px-10 py-4 hover:bg-gray-200 transition-colors"
+            className="flex-shrink-0 bg-black text-white font-black uppercase tracking-widest text-sm px-10 py-4 hover:bg-gray-800 transition-colors"
           >
             Order Now
           </a>
