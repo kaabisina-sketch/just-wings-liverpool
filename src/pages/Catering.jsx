@@ -43,7 +43,7 @@ export default function Catering() {
               </a>
               <a
                 href="mailto:catering@justwings.co.uk"
-                className="border-2 border-black text-black font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-black hover:text-white transition-colors text-center"
+                className="bg-white border-2 border-black text-black font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-black hover:text-white transition-colors text-center"
               >
                 Get a Quote
               </a>
