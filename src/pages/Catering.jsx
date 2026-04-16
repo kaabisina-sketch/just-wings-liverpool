@@ -9,7 +9,7 @@ export default function Catering() {
 
       {/* Hero — food photos flanking centered title */}
       <section className="pt-[60px] relative overflow-hidden bg-white">
-        <div className="grid grid-cols-5 md:grid-cols-7 min-h-[420px]">
+        <div className="grid grid-cols-5 md:grid-cols-8 min-h-[420px]">
           {/* Left food image */}
           <div className="col-span-2 md:col-span-3 relative overflow-hidden">
             <img
@@ -20,7 +20,7 @@ export default function Catering() {
           </div>
 
           {/* Center content */}
-          <div className="col-span-1 flex flex-col items-center justify-center bg-white px-6 py-12 text-center z-10">
+          <div className="col-span-1 md:col-span-2 flex flex-col items-center justify-center bg-white px-6 py-12 text-center z-10">
             <img
               src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/d5518e41e_justwingslogo.png"
               alt="Just Wings"
