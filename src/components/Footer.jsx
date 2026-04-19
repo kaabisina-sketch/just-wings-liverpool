@@ -36,18 +36,7 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Legal links */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          {legalLinks.map((link) => (
-            <a
-              key={link}
-              href="#"
-              className="text-gray-500 text-xs hover:text-black transition-colors"
-            >
-              {link}
-            </a>
-          ))}
-        </div>
+
 
         {/* Divider */}
         <div className="border-t border-black/20 pt-8 mb-6" />
