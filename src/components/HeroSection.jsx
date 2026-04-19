@@ -2,9 +2,9 @@ export default function HeroSection() {
   return (
     <section className="pt-[60px]">
       {/* Top split hero */}
-      <div className="flex flex-col md:flex-row min-h-[70vh]">
+      <div className="flex flex-col md:flex-row md:h-[calc(100vh-60px)]">
         {/* Left - lifestyle photo + tagline */}
-        <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[70vh] overflow-hidden bg-gray-100">
+        <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-0 overflow-hidden bg-gray-100">
           <img
             src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/51dbf268f_justwings.jpg"
             alt="Lifestyle"
@@ -32,7 +32,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right - food photo */}
-        <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[70vh] overflow-hidden">
+        <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-0 overflow-hidden">
           <img
             src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/56e82698b_wingshero.jpg"
             alt="Wings spread"
