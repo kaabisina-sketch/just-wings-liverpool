@@ -3,22 +3,7 @@ export default function HeroSection() {
     <section className="pt-[60px]">
       {/* Top split hero */}
       <div className="flex flex-col md:flex-row min-h-[70vh]">
-        {/* Left - food photo */}
-        <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[70vh] overflow-hidden">
-          <img
-            src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/56e82698b_wingshero.jpg"
-            alt="Wings spread"
-            className="w-full h-full object-cover brightness-90"
-          />
-          <div className="absolute inset-0 bg-black/10" />
-          <div className="absolute bottom-6 left-6">
-            <span className="border-2 border-white text-white text-xs font-black tracking-widest uppercase px-3 py-1">
-              Liverpool's Finest
-            </span>
-          </div>
-        </div>
-
-        {/* Right - lifestyle photo + tagline */}
+        {/* Left - lifestyle photo + tagline */}
         <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[70vh] overflow-hidden bg-gray-100">
           <img
             src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/51dbf268f_justwings.jpg"
@@ -43,6 +28,21 @@ export default function HeroSection() {
             >
               Order Now
             </a>
+          </div>
+        </div>
+
+        {/* Right - food photo */}
+        <div className="relative w-full md:w-1/2 min-h-[50vw] md:min-h-[70vh] overflow-hidden">
+          <img
+            src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/56e82698b_wingshero.jpg"
+            alt="Wings spread"
+            className="w-full h-full object-cover brightness-90"
+          />
+          <div className="absolute inset-0 bg-black/10" />
+          <div className="absolute bottom-6 left-6">
+            <span className="border-2 border-white text-white text-xs font-black tracking-widest uppercase px-3 py-1">
+              Liverpool's Finest
+            </span>
           </div>
         </div>
       </div>
