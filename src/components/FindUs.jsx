@@ -14,7 +14,7 @@ export default function FindUs() {
       <div className="relative h-72 md:h-96 overflow-hidden">
         <iframe
           title="Liverpool Map"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-3.0662%2C53.3768%2C-2.8662%2C53.4768&layer=mapnik&marker=53.4068%2C-2.9662"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-2.9985%2C53.3950%2C-2.9585%2C53.4150&layer=mapnik&marker=53.4058%2C-2.9790"
           className="w-full h-full border-0 grayscale"
           style={{ filter: "grayscale(1) contrast(1.1)" }}
         />
