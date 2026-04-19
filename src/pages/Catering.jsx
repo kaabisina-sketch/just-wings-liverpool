@@ -167,7 +167,7 @@ export default function Catering() {
         <div className="relative overflow-hidden group" style={{ minHeight: "300px" }}>
           <iframe
             title="Manchester Map"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.2490%2C53.4700%2C-2.2090%2C53.4900&layer=mapnik"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.9985%2C53.3950%2C-2.9585%2C53.4150&layer=mapnik"
             className="absolute inset-0 w-full h-full border-0"
             style={{ filter: "grayscale(1) contrast(1.1)" }}
           />
