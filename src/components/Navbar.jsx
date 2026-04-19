@@ -13,7 +13,7 @@ export default function Navbar() {
           <img
             src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/d5518e41e_justwingslogo.png"
             alt="Just Wings"
-            className="h-14"
+            className="h-14 invert"
           />
         </a>
 
