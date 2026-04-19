@@ -89,8 +89,9 @@ export default function MenuCarousel() {
                 className="flex-shrink-0 px-2 md:px-4"
                 style={{ width: `${100 / visible}%` }}
               >
-                <div className="flex flex-col text-center h-full">
-                  <div className="aspect-square overflow-hidden mb-4 bg-gray-100">
+                {/* Mobile: horizontal row layout */}
+              <div className="flex flex-row sm:flex-col gap-4 sm:gap-0 sm:text-center h-full">
+                  <div className="w-28 h-28 flex-shrink-0 sm:w-full sm:h-auto sm:aspect-square overflow-hidden bg-gray-100">
                     <img
                       src={item.image}
                       alt={item.name}
@@ -98,19 +99,22 @@ export default function MenuCarousel() {
                       style={{ objectPosition: item.imagePosition || 'center', transform: `${item.imageScale ? 'scale(1.25)' : ''} translateY(${item.imageOffsetY || '0px'})` }}
                     />
                   </div>
-                  <h3 className="font-black text-black text-xl uppercase tracking-tight mb-2">
-                    {item.name}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-1 flex-1">{item.description}</p>
-
-                  <a
-                    href="https://just-wings-crosby.ordertiger.com/locations"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full border-2 border-black bg-black text-white font-black text-sm uppercase tracking-widest py-3 hover:bg-white hover:text-black transition-colors text-center"
-                  >
-                    Order Now
-                  </a>
+                  <div className="flex flex-col flex-1 justify-between sm:mt-4">
+                    <div>
+                      <h3 className="font-black text-black text-base sm:text-xl uppercase tracking-tight mb-1">
+                        {item.name}
+                      </h3>
+                      <p className="text-gray-600 text-xs sm:text-sm mb-2">{item.description}</p>
+                    </div>
+                    <a
+                      href="https://just-wings-crosby.ordertiger.com/locations"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full border-2 border-black bg-black text-white font-black text-xs sm:text-sm uppercase tracking-widest py-2 sm:py-3 hover:bg-white hover:text-black transition-colors text-center"
+                    >
+                      Order Now
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
