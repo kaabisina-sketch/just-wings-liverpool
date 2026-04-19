@@ -29,7 +29,7 @@ export default function FlavorSection() {
           {flavors.map((flavor, i) => (
             <div
               key={i}
-              className="border border-black/20 p-8 hover:bg-black hover:text-white transition-all duration-300 group cursor-pointer bg-white"
+              className="border border-black/20 p-6 md:p-8 hover:bg-black hover:text-white transition-all duration-300 group cursor-pointer bg-white"
             >
               <div className="flex justify-between items-start mb-4">
                 <h3 className="font-black text-black group-hover:text-white uppercase text-xl tracking-tight leading-tight">

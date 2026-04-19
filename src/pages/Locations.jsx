@@ -48,14 +48,14 @@ export default function Locations() {
       </section>
 
       {/* Locations */}
-      <section className="max-w-5xl mx-auto px-4 py-16 space-y-8">
+      <section className="max-w-5xl mx-auto px-4 py-10 md:py-16 space-y-6 md:space-y-8">
         {locations.map((loc, i) => (
           <div
             key={i}
-            className="flex flex-col md:flex-row border-2 border-black overflow-hidden hover:shadow-xl transition-shadow"
+            className="flex flex-col sm:flex-row border-2 border-black overflow-hidden hover:shadow-xl transition-shadow"
           >
             {/* Image */}
-            <div className="w-full md:w-72 h-56 flex-shrink-0 overflow-hidden">
+            <div className="w-full sm:w-56 md:w-72 h-48 sm:h-56 flex-shrink-0 overflow-hidden">
               <img
                 src={loc.image}
                 alt={loc.name}
@@ -64,16 +64,16 @@ export default function Locations() {
             </div>
 
             {/* Info */}
-            <div className="flex flex-col justify-center p-8 flex-1">
+            <div className="flex flex-col justify-center p-6 md:p-8 flex-1">
               <div className="flex items-start justify-between mb-3">
-                <h2 className="font-black uppercase text-2xl tracking-tight leading-tight">
+                <h2 className="font-black uppercase text-xl md:text-2xl tracking-tight leading-tight">
                   {loc.name}
                 </h2>
-                <span className="ml-4 flex-shrink-0 text-green-600 font-black text-xs uppercase tracking-widest border border-green-600 px-2 py-1">
+                <span className="ml-3 flex-shrink-0 text-green-600 font-black text-xs uppercase tracking-widest border border-green-600 px-2 py-1">
                   {loc.status}
                 </span>
               </div>
-              <div className="flex items-center gap-2 text-gray-500 mb-6">
+              <div className="flex items-center gap-2 text-gray-500 mb-5">
                 <MapPin size={16} className="flex-shrink-0" />
                 <p className="text-sm">{loc.address}</p>
               </div>
@@ -81,7 +81,7 @@ export default function Locations() {
                 href="https://just-wings-crosby.ordertiger.com/locations"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-black text-white font-black uppercase tracking-widest text-sm px-8 py-3 hover:bg-gray-800 transition-colors w-fit"
+                className="inline-block bg-black text-white font-black uppercase tracking-widest text-sm px-6 py-3 hover:bg-gray-800 transition-colors w-fit"
               >
                 Order Now
               </a>

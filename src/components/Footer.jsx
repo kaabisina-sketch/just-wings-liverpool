@@ -24,12 +24,12 @@ export default function Footer() {
         </div>
 
         {/* Main nav */}
-        <div className="flex flex-wrap justify-center gap-8 mb-8">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-8">
           {mainLinks.map((link) => (
             <a
               key={link}
               href="#"
-              className="text-black font-black uppercase tracking-widest text-sm hover:text-gray-500 transition-colors"
+              className="text-black font-black uppercase tracking-widest text-xs md:text-sm hover:text-gray-500 transition-colors"
             >
               {link}
             </a>

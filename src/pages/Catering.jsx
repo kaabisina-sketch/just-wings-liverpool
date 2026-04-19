@@ -9,30 +9,28 @@ export default function Catering() {
 
       {/* Hero — food photos flanking centered title */}
       <section className="pt-[60px] relative overflow-hidden bg-white">
-        <div className="grid grid-cols-5 md:grid-cols-8 min-h-[420px]">
-          {/* Left food image */}
-          <div className="col-span-2 md:col-span-3 relative overflow-hidden">
+        {/* Mobile: stacked layout */}
+        <div className="flex flex-col md:hidden">
+          <div className="relative h-56 overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=800&q=80"
               alt="Wings catering"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              className="w-full h-full object-cover"
             />
           </div>
-
-          {/* Center content */}
-          <div className="col-span-1 md:col-span-2 flex flex-col items-center justify-center bg-white px-6 py-12 text-center z-10">
+          <div className="flex flex-col items-center justify-center bg-white px-6 py-10 text-center">
             <img
               src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/d5518e41e_justwingslogo.png"
               alt="Just Wings"
-              className="h-14 mb-6"
+              className="h-12 mb-4"
             />
             <h1
-              className="font-black uppercase leading-none mb-8 text-black"
-              style={{ fontSize: "clamp(1.8rem, 3.5vw, 3.5rem)", letterSpacing: "-0.04em" }}
+              className="font-black uppercase leading-none mb-6 text-black"
+              style={{ fontSize: "clamp(2.5rem, 10vw, 4rem)", letterSpacing: "-0.04em" }}
             >
               CATERING
             </h1>
-            <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
+            <div className="flex flex-col gap-3 w-full max-w-xs">
               <a
                 href="https://just-wings-crosby.ordertiger.com"
                 target="_blank"
@@ -49,9 +47,47 @@ export default function Catering() {
               </a>
             </div>
           </div>
+        </div>
 
-          {/* Right food image */}
-          <div className="col-span-2 md:col-span-3 relative overflow-hidden">
+        {/* Desktop: 3-column grid */}
+        <div className="hidden md:grid grid-cols-8 min-h-[420px]">
+          <div className="col-span-3 relative overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=800&q=80"
+              alt="Wings catering"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            />
+          </div>
+          <div className="col-span-2 flex flex-col items-center justify-center bg-white px-6 py-12 text-center z-10">
+            <img
+              src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/d5518e41e_justwingslogo.png"
+              alt="Just Wings"
+              className="h-14 mb-6"
+            />
+            <h1
+              className="font-black uppercase leading-none mb-8 text-black"
+              style={{ fontSize: "clamp(1.8rem, 3.5vw, 3.5rem)", letterSpacing: "-0.04em" }}
+            >
+              CATERING
+            </h1>
+            <div className="flex flex-col gap-3 w-full justify-center">
+              <a
+                href="https://just-wings-crosby.ordertiger.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-black border-2 border-black font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-black hover:text-white transition-colors text-center"
+              >
+                Place a Catering Order
+              </a>
+              <a
+                href="mailto:catering@justwings.co.uk"
+                className="bg-white border-2 border-black text-black font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-black hover:text-white transition-colors text-center"
+              >
+                Get a Quote
+              </a>
+            </div>
+          </div>
+          <div className="col-span-3 relative overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&q=80"
               alt="Wings spread"
@@ -108,7 +144,7 @@ export default function Catering() {
 
       {/* Place a Catering Order Banner */}
       <section className="bg-white border-t-2 border-black py-10 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
           <h2
             className="text-black font-black uppercase leading-none"
             style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)", letterSpacing: "-0.04em" }}

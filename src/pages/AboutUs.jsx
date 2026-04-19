@@ -65,7 +65,7 @@ export default function AboutUs() {
           >
             What We Stand For
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-2 border-black">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-0 border-2 border-black">
             {[
               { title: "Bold Flavor", desc: "Iconic sauces. Every one earned its place." },
               { title: "Fresh Only", desc: "Made to order. Never frozen, never rushed." },
@@ -74,7 +74,7 @@ export default function AboutUs() {
             ].map((v, i) => (
               <div
                 key={i}
-                className={`p-8 hover:bg-black hover:text-white transition-all group ${i < 3 ? "sm:border-r-2 border-black" : ""}`}
+                className={`p-6 md:p-8 hover:bg-black hover:text-white transition-all group border-black ${i % 2 === 0 ? "border-r-2" : ""} ${i < 2 ? "border-b-2 lg:border-b-0" : ""} ${i < 3 && i % 2 !== 0 ? "lg:border-r-2" : ""}`}
               >
                 <div className="w-8 h-1 bg-red-700 mb-6 group-hover:bg-white transition-colors" />
                 <h3 className="font-black uppercase text-lg tracking-tight mb-3">{v.title}</h3>

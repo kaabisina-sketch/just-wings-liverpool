@@ -53,7 +53,7 @@ export default function FindUs() {
             { name: "Just Wings - St Helens", address: "53 Ormskirk Street, WA10 2SY, Merseyside", status: "Open" },
             { name: "Just Wings - Leigh", address: "98 Railway Road, WN7 4AN, Manchester", status: "Open" },
           ].map((loc, i) => (
-            <div key={i} className="flex flex-col md:flex-row md:items-center justify-between px-6 md:px-12 py-5 hover:bg-gray-50 transition-colors">
+            <div key={i} className="flex flex-row items-center justify-between px-4 md:px-12 py-4 hover:bg-gray-50 transition-colors gap-3">
               <div>
                 {loc.area && (
                   <p className="text-xs font-black uppercase tracking-widest text-gray-400 mb-1">{loc.area}</p>

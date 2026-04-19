@@ -39,41 +39,54 @@ const menuItems = [
 
 export default function MenuCarousel() {
   const [current, setCurrent] = useState(0);
-  const visible = 3;
-  const max = menuItems.length - visible;
+  const [visible, setVisible] = useState(3);
+
+  useState(() => {
+    const update = () => {
+      if (window.innerWidth < 640) setVisible(1);
+      else if (window.innerWidth < 1024) setVisible(2);
+      else setVisible(3);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  });
+
+  const max = Math.max(0, menuItems.length - visible);
+  const clampedCurrent = Math.min(current, max);
 
   const prev = () => setCurrent((c) => Math.max(0, c - 1));
   const next = () => setCurrent((c) => Math.min(max, c + 1));
 
   return (
-    <section id="menu" className="bg-white py-16 px-4 md:px-12">
+    <section id="menu" className="bg-white py-12 px-4 md:px-12">
       <div className="relative">
         {/* Navigation arrows */}
         <button
           onClick={prev}
-          disabled={current === 0}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 disabled:opacity-30 hover:bg-gray-800 transition-colors"
+          disabled={clampedCurrent === 0}
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-2 md:p-3 disabled:opacity-30 hover:bg-gray-800 transition-colors"
         >
-          <ChevronLeft size={20} />
+          <ChevronLeft size={18} />
         </button>
         <button
           onClick={next}
-          disabled={current >= max}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 disabled:opacity-30 hover:bg-gray-800 transition-colors"
+          disabled={clampedCurrent >= max}
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-2 md:p-3 disabled:opacity-30 hover:bg-gray-800 transition-colors"
         >
-          <ChevronRight size={20} />
+          <ChevronRight size={18} />
         </button>
 
         {/* Cards */}
-        <div className="overflow-hidden mx-10">
+        <div className="overflow-hidden mx-8 md:mx-10">
           <div
             className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${current * (100 / visible)}%)` }}
+            style={{ transform: `translateX(-${clampedCurrent * (100 / visible)}%)` }}
           >
             {menuItems.map((item, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 px-4"
+                className="flex-shrink-0 px-2 md:px-4"
                 style={{ width: `${100 / visible}%` }}
               >
                 <div className="flex flex-col text-center h-full">
