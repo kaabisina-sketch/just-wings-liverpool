@@ -7,13 +7,13 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-black">
-      <div className="flex items-center justify-between px-6 py-3">
+      <div className="flex items-center justify-between px-6 py-2">
         {/* Logo */}
         <a href="/">
           <img
             src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/d5518e41e_justwingslogo.png"
             alt="Just Wings"
-            className="h-10 invert"
+            className="h-14"
           />
         </a>
 
