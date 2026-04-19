@@ -16,7 +16,7 @@ export default function HeroSection() {
             </p>
             <h1
               className="text-white font-black uppercase leading-none"
-              style={{ fontSize: "clamp(2.5rem, 7vw, 5rem)", letterSpacing: "-0.03em" }}
+              style={{ fontSize: "clamp(2.5rem, 7vw, 5rem)", letterSpacing: "-0.03em", textShadow: "0 2px 16px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.5)" }}
             >
               WHAT FLAVOR<br />ARE YOU?
             </h1>
