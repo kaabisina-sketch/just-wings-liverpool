@@ -164,12 +164,12 @@ export default function Catering() {
 
       {/* Bottom split — Find a location / Large event */}
       <section className="grid grid-cols-1 md:grid-cols-2 border-t-2 border-black min-h-[300px]">
-        <div className="relative overflow-hidden group">
-          <img
-            src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=800&q=80"
-            alt="Find a location"
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            style={{ minHeight: "300px" }}
+        <div className="relative overflow-hidden group" style={{ minHeight: "300px" }}>
+          <iframe
+            title="Manchester Map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.2490%2C53.4700%2C-2.2090%2C53.4900&layer=mapnik"
+            className="absolute inset-0 w-full h-full border-0"
+            style={{ filter: "grayscale(1) contrast(1.1)" }}
           />
           <div className="absolute inset-0 bg-black/60 flex items-end p-10">
             <a href="/locations" className="group/link">
