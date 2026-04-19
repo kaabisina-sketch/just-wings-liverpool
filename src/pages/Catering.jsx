@@ -30,18 +30,18 @@ export default function Catering() {
             >
               CATERING
             </h1>
-            <div className="flex flex-col gap-3 w-full max-w-xs">
+            <div className="flex flex-col gap-3 w-full">
               <a
                 href="https://just-wings-crosby.ordertiger.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-black border-2 border-black font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-black hover:text-white transition-colors text-center"
+                className="bg-white text-black border-2 border-black font-black uppercase tracking-widest text-xs px-4 py-4 hover:bg-black hover:text-white transition-colors text-center"
               >
                 Place a Catering Order
               </a>
               <a
                 href="mailto:catering@justwings.co.uk"
-                className="bg-white border-2 border-black text-black font-black uppercase tracking-widest text-xs px-6 py-4 hover:bg-black hover:text-white transition-colors text-center"
+                className="bg-white border-2 border-black text-black font-black uppercase tracking-widest text-xs px-4 py-4 hover:bg-black hover:text-white transition-colors text-center"
               >
                 Get a Quote
               </a>
