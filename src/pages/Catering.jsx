@@ -226,7 +226,7 @@ export default function Catering() {
         {/* Large Event */}
         <div className="relative overflow-hidden group" style={{ minHeight: "400px" }}>
           <img
-            src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/a68bca97d_flavord10.jpg"
+            src="https://media.base44.com/images/public/69cfc74a21d361a7e6a2fb4d/006fd753e_cateringimage.jpeg"
             alt="Large event catering"
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
