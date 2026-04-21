@@ -35,7 +35,7 @@ export default function Locations() {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-[60px] bg-black py-16 px-4 text-center">
+      <section className="pt-[100px] bg-black pb-16 px-4 text-center">
         <h1
           className="text-white font-black uppercase leading-none"
           style={{ fontSize: "clamp(2.5rem, 7vw, 5rem)", letterSpacing: "-0.03em" }}
