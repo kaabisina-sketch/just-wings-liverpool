@@ -72,7 +72,7 @@ export default function Catering() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://just-wings-crosby.ordertiger.com"
+                href="https://just-wings-crosby.ordertiger.com/locations"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center justify-center gap-3 bg-white text-black font-black uppercase tracking-widest text-sm px-8 py-5 hover:bg-red-600 hover:text-white transition-all duration-300 min-w-[220px]"
@@ -181,7 +181,7 @@ export default function Catering() {
             </h2>
           </div>
           <a
-            href="https://just-wings-crosby.ordertiger.com"
+            href="https://just-wings-crosby.ordertiger.com/locations"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex-shrink-0 flex items-center gap-3 bg-white text-black font-black uppercase tracking-widest text-sm px-10 py-5 hover:bg-black hover:text-white transition-all duration-300 text-lg"
